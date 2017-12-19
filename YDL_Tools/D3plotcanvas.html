@@ -1,0 +1,66 @@
+<link rel="stylesheet" type="text/css"  href="../c3-0.4.9/c3.css" rel="stylesheet">
+
+<div id="chart"></div>
+<script>
+<?php
+
+$plotString ='var chart = c3.generate({
+	size: {
+        height: 400,
+        width: 600
+    },
+    data: {
+		xs: {
+            Gene: "Chromosome",
+            Length: "x2",
+        },';
+$plotString .= '
+		columns: [ 
+			["Chromosome"';
+for ($x = 0; $x <= ($county - 1); $x++) {
+	$plotString .= ', '.$plot_dataset_x[$x];
+} 
+$plotString .= '],';
+$plotString .= '["Gene"';
+for ($x = 0; $x <= ($county - 1); $x++) {
+	$plotString .= ', '.$plot_dataset_y[$x];
+} 
+$plotString .= '], 
+		["Length", 230218, 813184, 316620,	1531933, 576874, 270161, 1090940, 562643, 439888, 745751, 666816, 1078177, 924431, 784333, 1091291, 948066],
+		["x2", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+	],';		
+$plotString .='		
+	type: "scatter",
+	types: {
+			Length: "bar",
+			x2: "bar"
+        }
+      },
+	  axis: {
+        x: {
+            label: "Chromosome",
+            tick: {
+                fit: false
+            }
+        },
+        y: {
+            label: "Start Coordinate"
+        }
+		
+    }
+});	';
+
+echo $plotString;
+
+?>
+
+
+
+</script>
+
+
+<?php
+//  echo $plotString; 
+?>
+
+ 
