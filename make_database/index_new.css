@@ -1,0 +1,349 @@
+#centeredmenu {
+   float:left;
+   width:100%;
+   background:#FFEBCD;
+   border-bottom:4px solid #000;
+   overflow:hidden;
+   position:relative;
+}
+#centeredmenu ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+#centeredmenu ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+#centeredmenu ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background:#FFCC99;
+   color:#000;
+   text-decoration:none;
+   line-height:1.3em;
+}
+#centeredmenu ul li a:hover {
+   background:#FF9900;
+   color:#fff;
+}
+#centeredmenu ul li a.active,
+#centeredmenu ul li a.active:hover {
+   color:#fff;
+   background:#000;
+   font-weight:bold;
+}
+/* end of centered menu css */
+
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	background:#fff;
+	min-width:600px;    	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font-size:90%;
+}
+a {
+	color:#369;
+}
+a:hover {
+	color:#fff;
+	background:#369;
+	text-decoration:none;
+}
+h1 {
+	margin:.75em 0 .2em 0;
+	padding:0;
+	text-align:left;
+	font-family: Arial, Arial, Helvetica, sans-serif;
+}
+h2, h3, h4 {
+	margin:.7em 0 .2em 0;
+	padding:0;
+}
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+img {
+	margin:10px 0 5px;
+}
+
+/* Header styles */
+#header {
+	clear:both;
+	float:left;
+	width:100%;
+	background:#FAF0E6
+}
+#header {
+	border-bottom:1px solid #000;
+}
+#header p,
+#header h1,
+#header h2 {
+	padding:.4em 15px 0 15px;
+	margin:0;
+}
+#header ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:10px 0 0 0;
+	padding:0;
+}
+#header ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#header ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding:3px 10px;
+	text-align:center;
+	background:#eee;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.3em;
+}
+#header ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+#header ul li a.active,
+#header ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+}
+#header ul li a span {
+	display:block;
+}
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col_main,
+.col_left {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* right column background colour */
+}
+.leftmenu .colleft {
+	right:85%;			/* right column width */
+	background:#FAF0E6;	/* left column background colour */
+}
+.leftmenu .col_main {
+	width:81%;			/* right column content width */
+	left:102%;			/* 100% plus left column left padding */
+}
+.leftmenu .col_left {
+	width:11%;			/* left column content width (column width minus left and right padding) */
+	left:6%;			/* (right column left and right padding) plus (left column left padding) */
+}
+
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}
+
+/*Table css from sonification*/
+
+.box-table-a {
+	text-align: center;
+	margin: auto; /*make table center in firefox*/
+	width:100%;
+}
+
+.box-table-a th {
+	font-family: "Times New Roman", "Times New Roman", Times, serif;
+	padding: 8px;
+	background: #FFCC99;
+	border-top: 1px solid #FFCC99;
+	font-weight: bold;
+}
+
+.box-table-a td { 
+	font-family: "Times New Roman", "Times New Roman", Times, serif;
+	padding: 1px;
+	background: #FFEBCD; 
+	border-bottom: 1px solid #FFCC99;
+	padding-left:20px;
+}
+
+.box-table-a tr:hover td {
+	background: #F7E1BE;
+	color: #000000;
+}
+
+td.l {
+	text-align: left; 
+	padding-left:100px; 
+}
+ 
+th.l { 
+	text-align: left;
+	padding-left:100px; 
+}
+/* td or td class="l" */
+
+.box-table-b {
+	text-align: center;
+	margin: auto; /*make table center in firefox*/
+	width:100%;
+}
+
+.box-table-b th {
+	font-family: "Times New Roman", "Times New Roman", Times, serif;
+	padding: 8px;
+	background: #FFCC99;
+	border-top: 1px solid #FFCC99;
+	font-weight: bold;
+}
+
+.box-table-b td { 
+	font-family: "Times New Roman", "Times New Roman", Times, serif;
+	padding: 1px;
+	background: #FFEBCD; 
+	border-bottom: 1px solid #FFCC99;
+	padding-left:1px; /*change from table-a*/
+}
+
+.box-table-b tr:hover td {
+	background: #F7E1BE;
+	color: #000000;
+}
+
+/*set up to control drop down boxes and submit buttons*/
+.submitbutton {
+	background-color:#ef8f3b;
+	color:#fff;	color:#fff;/*font colour*/
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:12px;
+	line-height:19px;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border:0;
+	text-shadow:#C17C3A 0 -1px 0;
+	width:120px;
+	height:20px
+}
+
+.submitbutton:hover {
+	background-color:#e47513;
+}
+
+.submitbutton_menu {
+    background: #FFFFFF;
+	border: #5588AA 2px solid;
+	color: #333333; 
+	margin: 1px 0px 1px 0px; /*T R B L*/
+	padding: 0px 0px 0px 0px;
+	font-weight: bold;
+	font-family: Verdana, Verdana, Geneva, sans-serif
+}
+
+.submitbutton_menu :hover {
+	color: #FF0000;
+	font-weight: bold;
+	font-family: Verdana, Verdana, Geneva, sans-serif
+}
+
+fieldset{
+	border:2px solid #5588AA;
+	clear: left;
+	margin: 5px 0px 5px 0px; /*T R B L*/
+	padding: 5px 10px 10px 10px;
+	background: #FFEBCD; 
+	width: 820;
+
+}
+
+
+<!-- Heres the CSS code -->
+
+div.gene_wrapper{
+    width: 820px;
+
+}
+
+div.gene_left_box{
+    float: left;
+    padding: 10px;
+    width: 100px;
+}
+
+div.gene_right_box{
+    float: left;
+    padding: 10px;
+    width: 680px;
+}
+
+div.gene_footer{
+    clear:both;
+}
+
+
+
+<style type="text/css">
+.tag_cloud
+	{padding: 3px; text-decoration: none;
+	font-family: verdana; 	}
+.tag_cloud:hover { color: #FF66CC; background: #000000; }
+.tag_cloud:active { color: #6699FF;  }
+</style>
+
+<input type="submit" class="styled-button-5" value="Download" /> 
+
+

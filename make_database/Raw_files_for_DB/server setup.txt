@@ -1,0 +1,45 @@
+#cloud-config
+ 
+# Automatically update all of the packages
+package_update: true
+package_upgrade: true
+package_reboot_if_required: true
+ 
+# Install the LAMP stack
+packages:
+  - apache2
+  - mysql-server
+  - php5
+  - php5-mysql
+  - libapache2-mod-auth-mysql
+  - libapache2-mod-php5
+  - php5-xsl
+  - php5-gd
+  - php-pear
+ 
+
+ *Then manually run commands
+ sudo /etc/init.d/apache2 restart
+ mysqladmin -u root -p password yourpassword **
+ sudo a2enmod php5
+ sudo service apache2 restart
+ sudo apt-get install phpmyadmin  
+ 	(options: apache2, Yes, yourpassword, phpmyadminPassword)
+ 	*** not found in browser...... http://115.146.93.118/phpmyadmin/ NO!!!
+ sudo nano /etc/apache2/apache2.conf add include......
+ sudo dpkg-reconfigure -plow phpmyadmin
+ sudo service apache2 restart (reload http://115.146.93.118/phpmyadmin/ YES!!!)
+ ..... login with mysqladmin root as set above **
+ http://115.146.93.118/info.php yes!
+ http://115.146.93.118/marktest.php yes
+ file location (sudo nano) /var/www/marktest.php
+ 
+ 
+ 
+Other heritage junk............. (not used)
+runcmd:
+ - [ ls, -l, / ]
+ - [sudo apt-get update]
+ - [sudo apt-get install apache2 php5 mysql-server mysql-client]
+ 
+ dpkg --get-selections | grep php

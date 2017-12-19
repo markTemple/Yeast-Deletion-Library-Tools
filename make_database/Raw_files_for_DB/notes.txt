@@ -1,0 +1,16 @@
+
+check gene literature field "literature topic is not to small
+add gene name to TF pairs, what does count tf mean?
+
+what dat do you really want in a table
+eg add references into phenotypes, 
+
+need to double check keith pubs vs sgd get all keith from gl and pd
+
+build page to value add to holding tables
+
+change $select, $where …. to mysql01, $mysql02 etc… till 06… this should give enough bits to wrap around the variable$
+
+
+
+where is h2o2 data
